@@ -9,7 +9,6 @@ import { Button } from "../ui/button";
 import { Check, Copy, RefreshCw } from "lucide-react";
 import { useOrigin } from "@/hooks/use-origin";
 import { useState } from "react";
-import errorMap from "zod/locales/en.js";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
