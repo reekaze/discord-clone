@@ -8,6 +8,8 @@ import MembersModal from "../modals/members-modal";
 import CreateChannelModal from "../modals/create-channel-modal";
 import LeaveServerModal from "../modals/leave-server-modal";
 import DeleteServerModal from "../modals/delete-server-mdal";
+import DeleteChannelModal from "../modals/delete-channel-modal";
+import EditChannelModal from "../modals/edit-channel-modal";
 
 type Props = {};
 
@@ -31,6 +33,8 @@ const ModalProvider = (props: Props) => {
       <CreateChannelModal />
       <LeaveServerModal />
       <DeleteServerModal />
+      <DeleteChannelModal />
+      <EditChannelModal />
     </>
   );
 };
