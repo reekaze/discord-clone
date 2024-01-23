@@ -13,7 +13,7 @@ const SocketIndicator = (props: Props) => {
     return (
       <Badge
         variant={"outline"}
-        className="bg-yellow-600 text-white border-none"
+        className="bg-yellow-600 text-white border-none text-center"
       >
         Fallback: Polling every 1s
       </Badge>
@@ -23,7 +23,7 @@ const SocketIndicator = (props: Props) => {
   return (
     <Badge
       variant={"outline"}
-      className="bg-emerald-600 text-white border-none"
+      className="bg-emerald-600 text-white border-none text-center"
     >
       Live: Real-time update
     </Badge>
