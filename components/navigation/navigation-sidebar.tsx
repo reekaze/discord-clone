@@ -1,7 +1,6 @@
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
-
 import React from "react";
 import NavigationAction from "./navigation-actions";
 import { Separator } from "../ui/separator";
@@ -9,6 +8,7 @@ import { ScrollArea } from "../ui/scroll-area";
 import NavigationItem from "./navigation-item";
 import { ModeToggle } from "../mode-toggle";
 import { UserButton } from "@clerk/nextjs";
+import CustomUserButton from "../custom-user-button";
 
 type Props = {};
 
@@ -47,14 +47,15 @@ const NavigationSidebar = async (props: Props) => {
       </ScrollArea>
       <div className="pb-3 mt-auto flex items-center flex-col gap-y-4">
         <ModeToggle />
-        <UserButton
+        <CustomUserButton imageUrl={profile.imageUrl} />
+        {/* <UserButton
           afterSignOutUrl="/"
           appearance={{
             elements: {
               avatarBox: "h-[48px] w-[48px]",
             },
           }}
-        />
+        /> */}
       </div>
     </div>
   );

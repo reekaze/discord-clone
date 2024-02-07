@@ -1,11 +1,6 @@
 "use client";
 import React from "react";
-import {
-  SheetClose,
-  SheetContent,
-  SheetOverlay,
-  SheetPortal,
-} from "./ui/sheet";
+import { SheetContent } from "./ui/sheet";
 
 type Props = {
   children: React.ReactNode;
