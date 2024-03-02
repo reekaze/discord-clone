@@ -31,7 +31,7 @@ const CustomUserButton = ({ imageUrl }: CustomUserButtonProps) => {
       >
         <DropdownMenuItem
           onClick={() => {
-            signOut(() => router.push("/"));
+            signOut();
           }}
         >
           Sign Out
